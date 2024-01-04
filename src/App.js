@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import './App.css'; // Assuming you are using a separate CSS file
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <Router>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+      <nav className="navbar">
+        <div className="hamburger" onClick={toggleMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div className={`menu ${menuOpen ? "open" : ""}`}>
+          <Link to="/" onClick={toggleMenu}>Home</Link>
+          <Link to="/about" onClick={toggleMenu}>About</Link>
+          <Link to="/projects" onClick={toggleMenu}>Projects</Link>
+          <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+        </div>
       </nav>
 
       <Routes>
