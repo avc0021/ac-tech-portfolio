@@ -1,10 +1,10 @@
 import React from "react";
+import logo from '../images/2.png';
 
 function Home() {
   return (
-    <div>
-      <h1>Adam Castro</h1>
-      <p>Web Developer</p>
+    <div className="container">
+      <img src={logo} alt="adam-castro-logo" />
     </div>
   );
 }
