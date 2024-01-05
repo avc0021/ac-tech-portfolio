@@ -1,6 +1,6 @@
 /* App.css */
 .navbar {
-  background-color: white;
+  /* background-color: white; */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -17,15 +17,30 @@
 }
 
 .hamburger div {
-  background-color: #333; /* Dark color for contrast */
+  /* background-color: #333; Dark color for contrast */
   height: 3px; /* Height of each line */
   width: 100%; /* Width of each line */
   border-radius: 1px; /* Optional: Rounded corners for the lines */
 }
 
-.hamburger:hover div {
-  background-color: #555; /* Slightly different color on hover for interactivity */
+/* .hamburger:hover div {
+  background-color: #555; Slightly different color on hover for interactivity
+} */
+
+#background-video {
+  position: fixed; /* Positioned relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to achieve true centering */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Positioned behind the content */
+  object-fit: cover; /* Ensures video covers the whole viewport */
 }
+
+
 
 .menu {
   display: flex;

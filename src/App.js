@@ -9,6 +9,8 @@ import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/ma
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Rotate as Hamburger } from 'hamburger-react';
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,14 +22,12 @@ function App() {
   return (
     <Router>
       <nav className="navbar">
-        <div className="hamburger" onClick={toggleMenu}>
-        <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/external-hamburger-menu-list-with-parallel-navigation-button-basic-regular-tal-revivo.png" alt="external-hamburger-menu-list-with-parallel-navigation-button-basic-regular-tal-revivo"/>
-
-
+        <div className="hamburger">
+          <Hamburger color="white" toggled={menuOpen} toggle={setMenuOpen} />
         </div>
       </nav>
 
-      <Drawer anchor="left" open={menuOpen} onClose={toggleMenu}>
+      <Drawer anchor="left" open={menuOpen} onClose={() => setMenuOpen(false)}>
         <Box
           sx={{ width: 250 }}
           role="presentation"
@@ -42,29 +42,36 @@ function App() {
             ))}
           </List>
           <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <ListItem>
-              <ListItemIcon>
-                <GitHubIcon />
-              </ListItemIcon>
-              <ListItemText primary="GitHub" secondary="Your GitHub Link" />
-            </ListItem>
-            <ListItem>
-              <ListItemIcon>
-                <EmailIcon />
-              </ListItemIcon>
-              <ListItemText primary="Email" secondary="Your Email" />
-            </ListItem>
-            <ListItem>
-              <ListItemIcon>
-                <PhoneIcon />
-              </ListItemIcon>
-              <ListItemText primary="Phone" secondary="Your Phone Number" />
-            </ListItem>
-          </Box>
+          <ListItem button component="a" href="https://github.com/ajcastr1" target="_blank">
+            <ListItemIcon>
+              <GitHubIcon />
+            </ListItemIcon>
+            <ListItemText primary="GitHub- Work" />
+          </ListItem>
+          <ListItem button component="a" href="https://github.com/avc0021" target="_blank">
+            <ListItemIcon>
+              <GitHubIcon />
+            </ListItemIcon>
+            <ListItemText primary="GitHub- Personal" />
+          </ListItem>
+          <ListItem button component="a" href="mailto:avc0021@gmail.com">
+            <ListItemIcon>
+              <EmailIcon />
+            </ListItemIcon>
+            <ListItemText primary="Email" />
+          </ListItem>
+          <ListItem button component="a" href="tel:(210) 383-0681">
+            <ListItemIcon>
+              <PhoneIcon />
+            </ListItemIcon>
+            <ListItemText primary="Phone" />
+          </ListItem>
+        </Box>
         </Box>
       </Drawer>
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
