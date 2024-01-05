@@ -60,11 +60,11 @@ function App() {
             </ListItemIcon>
             <ListItemText primary="Email" />
           </ListItem>
-          <ListItem button component="a" href="tel:(210) 383-0681">
+          <ListItem>
             <ListItemIcon>
               <PhoneIcon />
             </ListItemIcon>
-            <ListItemText primary="Phone" />
+            <ListItemText primary="(210) 383-0681" />
           </ListItem>
         </Box>
         </Box>
