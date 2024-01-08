@@ -23,7 +23,7 @@ function Home() {
     "autoPlay": true,
     "background": {
       "color": {
-        "value": "#232741"
+        "value": "#322E2D"
       },
       "image": `url(${myLogo})`,
       "position": "50% 50%",
