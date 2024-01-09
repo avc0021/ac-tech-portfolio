@@ -13,7 +13,7 @@ function About() {
           whether it's bringing a new app to life or finding a fresh twist on a
           website. It's all about making things that people love to use. My tech
           toolbox includes Javascript, Cascade CMS, AWS Lambda, Git, Microsoft
-          Azure, Algolia, MaterialUI, Bootstrap, NodeJS, GraphQL, Canva,
+          Azure, Algolia, Ellucian Experience SDK, MaterialUI, Bootstrap, NodeJS, GraphQL, Canva,
           Photoshop, and React. For me, it's not just about the tools. Its about
           creating user-friendly tech marvels. I believe the best tech solutions
           are those that feel natural and intuitive – almost like they've always
