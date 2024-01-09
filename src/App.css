@@ -12,15 +12,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 25px; /* Height of the hamburger icon */
-  width: 30px; /* Width of the hamburger icon */
+  height: 35px;
+  width: 40px;
+  padding: 10px;
 }
 
 .hamburger div {
   /* background-color: #333; Dark color for contrast */
-  height: 3px; /* Height of each line */
+  height: 4px; /* Height of each line */
   width: 100%; /* Width of each line */
-  border-radius: 1px; /* Optional: Rounded corners for the lines */
+  border-radius: 2px; /* Optional: Rounded corners for the lines */
 }
 
 /* .hamburger:hover div {
@@ -42,18 +43,30 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center;
+  align-items: center;
   position: relative;
-  z-index: 10; /* Ensure it's above the particles background */
-  padding: 20px; /* Add some spacing around your text */
-  margin: auto; /* Centers the content block in the available space */
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background for better readability */
-  color: #333; /* Text color */
-  width: calc(100% - 40px); /* Subtracting the total horizontal padding from 100% */
-  max-width: 800px; /* Adjust this value based on your design preference */
-  box-sizing: border-box; 
+  z-index: 10;
+  padding: 20px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, #322E2D, #585858);
+  color: white;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow size and darkness */
+  transition: box-shadow 0.3s, transform 0.3s;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
 }
+
+
+.content:hover {
+  transform: scale(1.05);
+}
+
 
 .menu {
   display: flex;
@@ -89,6 +102,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height, or set to desired height */
-  width: 100%; /* Set to desired width */
+  height: 100vh;
+  width: 100%; 
+}
+
+.project-card {
+  margin: auto auto 15px auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, #322E2D, #585858);
+  color: white;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow size and darkness */
+  transition: box-shadow 0.3s, transform 0.3s;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
 }
