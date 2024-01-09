@@ -145,6 +145,7 @@ function Home() {
           options={options}
         />
       )}
+      <img src={myLogo} alt="Logo" className="logo-animation" />
     </div>
   );
 }
