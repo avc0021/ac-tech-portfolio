@@ -10,7 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Rotate as Hamburger } from 'hamburger-react';
-
+import ParticlesBackground from "./ParticlesBackground.js";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +21,7 @@ function App() {
 
   return (
     <Router>
+      <ParticlesBackground /> 
       <nav className="navbar">
         <div className="hamburger">
           <Hamburger color="white" toggled={menuOpen} toggle={setMenuOpen} />

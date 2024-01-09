@@ -39,7 +39,21 @@
   object-fit: contain;
 }
 
-
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  position: relative;
+  z-index: 10; /* Ensure it's above the particles background */
+  padding: 20px; /* Add some spacing around your text */
+  margin: auto; /* Centers the content block in the available space */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background for better readability */
+  color: #333; /* Text color */
+  width: calc(100% - 40px); /* Subtracting the total horizontal padding from 100% */
+  max-width: 800px; /* Adjust this value based on your design preference */
+  box-sizing: border-box; 
+}
 
 .menu {
   display: flex;
