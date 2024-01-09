@@ -42,7 +42,7 @@ function App() {
               </ListItem>
             ))}
           </List>
-          <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          {/* <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <ListItem button component="a" href="https://github.com/ajcastr1" target="_blank">
             <ListItemIcon>
               <GitHubIcon />
@@ -67,7 +67,7 @@ function App() {
             </ListItemIcon>
             <ListItemText primary="(210) 383-0681" />
           </ListItem>
-        </Box>
+        </Box> */}
         </Box>
       </Drawer>
 
