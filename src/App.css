@@ -127,3 +127,10 @@
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
 }
+
+/* Media query for mobile devices */
+/* @media (max-width: 600px) {
+  .particles-container {
+    background-size: 90%;
+  }
+} */
