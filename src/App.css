@@ -145,18 +145,23 @@
   top: 50%;
   transform: translate(-50%, -50%);
   animation: logoFadeInScaleUp 1s ease-out forwards;
-  width: 30%; /* Match the size specified in particles options for desktop */
-  max-width: 200px; /* Adjust as necessary */
+  width: 30%; /* Increase the size of the logo */
 }
 
 .particles-container {
-  position: 50% 50%
-  /* Other styles... */
+  width: 100px;
+  margin: auto;
+  display: block;
+  
+  
+
+  
 }
 
 @media (max-width: 600px) {
   .logo-animation {
-    width: 90%; /* Match the size specified in particles options for mobile */
+    width: 50%; /* Adjust for mobile */
+    max-width: 200px; /* Control the maximum size on mobile */
   }
 }
 
