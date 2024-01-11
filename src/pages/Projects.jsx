@@ -1,10 +1,10 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography, Link } from "@mui/material";
-import HomeSearchVideo from "../videos/uiw-home-search.mp4";
+import { Card, CardContent, CardMedia, Typography, Link, Button } from "@mui/material";
+import HomeSearchVideo from "../videos/uiw-search-video.mp4";
 import "../App.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import MicrosoftVideo from "../videos/microsoft-card.mp4";
-import CanvasVideo from "../videos/canvas-instructure.mp4";
+import MicrosoftVideo from "../videos/outlook-onedrive-video.mp4";
+import CanvasVideo from "../videos/canvas-cards-video.mp4";
 
 function Projects() {
   return (
@@ -59,7 +59,9 @@ function Projects() {
               Meanwhile, the To-Do Card presents a list of assignments, each with its name and due date, and includes links directing users to the dashboard for completing these tasks.
               Developed in collaboration with backend developers and Canvas representatives, this project was meticulously crafted from scratch using React, AWS Lambda, and the Ellucian Experience SDK, complemented by Insomnia for API testing.
             </Typography>
+            <Button>
             <GitHubIcon />
+            </Button>
             <Link href="https://experience.elluciancloud.com/uotiw/">Explore</Link>
           </CardContent>
         </Card>
