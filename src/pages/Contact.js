@@ -1,5 +1,11 @@
 import React from "react";
-import { Box, ListItem, ListItemIcon, ListItemText } from "@mui/material";
+import {
+  Typography,
+  Box,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -9,6 +15,22 @@ function Contact() {
   return (
     <div className="container">
       <div className="content">
+      <Box
+        sx={{
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          variant="h1"
+          color="text.primary"
+          className="typography-title"
+        >
+          Contact
+        </Typography>
+      </Box>
         <Box
           sx={{
             flexGrow: 1,

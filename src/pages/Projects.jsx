@@ -30,7 +30,16 @@ function Projects() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Typography className="project-button" variant="h1" color="text.primary" sx={{ backgroundColor: 'yellow', border: '1px solid red' }}>My Projects</Typography>
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h1" color="text.primary" className="typography-title">My Projects</Typography>
+        </Box>
         <div>
           <Card className="project-card">
             <CardContent>
@@ -91,23 +100,23 @@ function Projects() {
                 workspace
               </Typography>
               <Box sx={{ display: 'flex', gap: theme.spacing(2), mt: theme.spacing(2) }}>
-              <Button
-                variant="contained"
-                className="project-button"
-                color="primary"
-                href="https://github.com/avc0021/EEDev"
-              >
-                <GitHubIcon href="https://github.com/avc0021/EEDev" />
-              </Button>
-              <Button
-                openInNewIcon="OpenInNewIcon"
-                variant="contained"
-                className="project-button"
-                color="primary"
-                href="https://experience.elluciancloud.com/uotiw/"
-              >
-                <OpenInNewIcon href="https://experience.elluciancloud.com/uotiw/" />
-              </Button>
+                <Button
+                  variant="contained"
+                  className="project-button"
+                  color="primary"
+                  href="https://github.com/avc0021/EEDev"
+                >
+                  <GitHubIcon href="https://github.com/avc0021/EEDev" />
+                </Button>
+                <Button
+                  openInNewIcon="OpenInNewIcon"
+                  variant="contained"
+                  className="project-button"
+                  color="primary"
+                  href="https://experience.elluciancloud.com/uotiw/"
+                >
+                  <OpenInNewIcon href="https://experience.elluciancloud.com/uotiw/" />
+                </Button>
               </Box>
             </CardContent>
           </Card>
@@ -134,23 +143,23 @@ function Projects() {
                 testing.
               </Typography>
               <Box sx={{ display: 'flex', gap: theme.spacing(2), mt: theme.spacing(2) }}>
-              <Button
-                variant="contained"
-                className="project-button"
-                color="primary"
-                href="https://github.com/uiwwebteam/canvas-card"
-              >
-                <GitHubIcon href="https://github.com/uiwwebteam/canvas-card" />
-              </Button>
-              <Button
-                openInNewIcon="OpenInNewIcon"
-                variant="contained"
-                className="project-button"
-                color="primary"
-                href="https://experience.elluciancloud.com/uotiw/"
-              >
-                <OpenInNewIcon href="https://experience.elluciancloud.com/uotiw/" />
-              </Button>
+                <Button
+                  variant="contained"
+                  className="project-button"
+                  color="primary"
+                  href="https://github.com/uiwwebteam/canvas-card"
+                >
+                  <GitHubIcon href="https://github.com/uiwwebteam/canvas-card" />
+                </Button>
+                <Button
+                  openInNewIcon="OpenInNewIcon"
+                  variant="contained"
+                  className="project-button"
+                  color="primary"
+                  href="https://experience.elluciancloud.com/uotiw/"
+                >
+                  <OpenInNewIcon href="https://experience.elluciancloud.com/uotiw/" />
+                </Button>
               </Box>
             </CardContent>
           </Card>

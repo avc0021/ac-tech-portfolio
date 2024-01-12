@@ -1,10 +1,23 @@
 import React from "react";
+import {
+  Typography,
+  Box
+} from "@mui/material";
 
 function About() {
   return (
     <div className="container">
       <div className="content">
-        <h1>About</h1>
+      <Box
+          sx={{
+            flexGrow: 1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h1" color="text.primary" className="typography-title">About</Typography>
+        </Box>
         <p>
           Hello there! My name is Adam and I've found my calling in the vibrant
           world of web and mobile technology at the University of the Incarnate
