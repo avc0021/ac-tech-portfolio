@@ -4,9 +4,16 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import './App.css'; // Your CSS file
-import { Box, Drawer, List, ListItem, ListItemText } from '@mui/material';
-import { Rotate as Hamburger } from 'hamburger-react';
+import "./App.css";
+import {
+  Box,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  Button,
+} from "@mui/material";
+import { Rotate as Hamburger } from "hamburger-react";
 import ParticlesBackground from "./ParticlesBackground.js";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -32,28 +39,49 @@ function App() {
     <Router>
       <ParticlesBackground />
       <ThemeProvider theme={theme}>
-      <nav className="navbar">
-        <div className="hamburger">
-          <Hamburger color="white" toggled={menuOpen} toggle={setMenuOpen} />
-        </div>
-      </nav>
+        <nav className="navbar">
+          <div className="hamburger">
+            <Hamburger color="white" toggled={menuOpen} toggle={setMenuOpen} />
+          </div>
+        </nav>
 
-      <Drawer anchor="left" open={menuOpen} onClose={() => setMenuOpen(false)}>
-        <Box
-          sx={{ width: 250 }}
-          role="presentation"
-          onClick={toggleMenu}
-          onKeyDown={toggleMenu}
+        <Drawer
+          anchor="left"
+          open={menuOpen}
+          onClose={() => setMenuOpen(false)}
         >
-          <List>
-            {['Home', 'About', 'Projects', 'Contact'].map((text, index) => (
-              <ListItem button key={text} component={Link} to={`/${text.toLowerCase()}`}>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-        </Box>
-      </Drawer>
+          <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={toggleMenu}
+            onKeyDown={toggleMenu}
+          >
+            <List>
+              {["Home", "About", "Projects", "Contact"].map((text, index) => (
+                <ListItem
+                  button
+                  key={text}
+                  component={Link}
+                  to={`/${text.toLowerCase()}`}
+                >
+                  <ListItemText primary={text} />
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+          {/* Resume Button */}
+          <div style={{ position: "fixed", bottom: 20, left: 10 }}>
+            <Button
+              variant="contained"
+              color="primary"
+              href="/path-to-your-resume.pdf" // Replace with the actual path to your resume
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </Button>
+          </div>
+        </Drawer>
       </ThemeProvider>
       <Routes>
         <Route path="/" element={<Home />} />
