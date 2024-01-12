@@ -8,6 +8,7 @@ import './App.css'; // Your CSS file
 import { Box, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Rotate as Hamburger } from 'hamburger-react';
 import ParticlesBackground from "./ParticlesBackground.js";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,9 +17,21 @@ function App() {
     setMenuOpen(!menuOpen);
   };
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#a2a3ac", // Your chosen primary color
+      },
+      secondary: {
+        main: "#7986cb", // Your chosen secondary color
+      },
+    },
+  });
+
   return (
     <Router>
-      <ParticlesBackground /> 
+      <ParticlesBackground />
+      <ThemeProvider theme={theme}>
       <nav className="navbar">
         <div className="hamburger">
           <Hamburger color="white" toggled={menuOpen} toggle={setMenuOpen} />
@@ -41,7 +54,7 @@ function App() {
           </List>
         </Box>
       </Drawer>
-
+      </ThemeProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />

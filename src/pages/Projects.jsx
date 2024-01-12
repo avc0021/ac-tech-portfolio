@@ -63,11 +63,13 @@ function Projects() {
                 user-friendly experience. Also refactored header to look more
                 like amazon.
               </Typography>
-              <Box sx={{ display: 'flex', gap: theme.spacing(2), mt: theme.spacing(2) }}>
+              <Box sx={{ display: 'flex', gap: theme.spacing(2), mt: theme.spacing(2) }} target="_blank"
+                rel="noopener noreferrer">
                 <Button variant="contained" color="primary" className="project-button" href="https://github.com/ajcastr1/Algolia">
                   <GitHubIcon />
                 </Button>
-                <Button variant="contained" color="primary" className="project-button" href="https://www.uiw.edu/">
+                <Button variant="contained" color="primary" className="project-button" href="https://www.uiw.edu/" target="_blank"
+                  rel="noopener noreferrer">
                   <OpenInNewIcon />
                 </Button>
               </Box>
@@ -105,6 +107,8 @@ function Projects() {
                   className="project-button"
                   color="primary"
                   href="https://github.com/avc0021/EEDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GitHubIcon href="https://github.com/avc0021/EEDev" />
                 </Button>
@@ -114,6 +118,8 @@ function Projects() {
                   className="project-button"
                   color="primary"
                   href="https://experience.elluciancloud.com/uotiw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <OpenInNewIcon href="https://experience.elluciancloud.com/uotiw/" />
                 </Button>
@@ -148,6 +154,8 @@ function Projects() {
                   className="project-button"
                   color="primary"
                   href="https://github.com/uiwwebteam/canvas-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GitHubIcon href="https://github.com/uiwwebteam/canvas-card" />
                 </Button>
@@ -157,6 +165,8 @@ function Projects() {
                   className="project-button"
                   color="primary"
                   href="https://experience.elluciancloud.com/uotiw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <OpenInNewIcon href="https://experience.elluciancloud.com/uotiw/" />
                 </Button>
