@@ -3,24 +3,14 @@ import { Typography, Box } from "@mui/material";
 
 function About() {
   return (
-    <div className="container">
+   <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      {/* Typography component for the title */}
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
+        <Typography variant="h1" color="text.primary" className="typography-title">
+          About
+        </Typography>
+      </Box>
       <div className="content">
-        <Box
-          sx={{
-            flexGrow: 1,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Typography
-            variant="h1"
-            color="text.primary"
-            className="typography-title"
-          >
-            About
-          </Typography>
-        </Box>
         <p>
           Hello there! My name is Adam and I've found my calling in the vibrant
           world of web and mobile technology at the University of the Incarnate
