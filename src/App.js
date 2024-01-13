@@ -19,9 +19,11 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [drawerWidth, setDrawerWidth] = useState(250); // default width
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setDrawerWidth(menuOpen ? 250 : 200); // toggle between 250px and 200px
   };
 
   const theme = createTheme({
@@ -44,11 +46,14 @@ function App() {
             <Hamburger color="white" toggled={menuOpen} toggle={setMenuOpen} />
           </div>
         </nav>
-
         <Drawer
           anchor="left"
           open={menuOpen}
-          onClose={() => setMenuOpen(false)}
+          onClose={() => {
+            setMenuOpen(false);
+            setDrawerWidth(250);
+          }}
+          sx={{ width: drawerWidth }}
         >
           <Box
             sx={{ width: 250 }}
@@ -74,7 +79,7 @@ function App() {
             <Button
               variant="contained"
               color="primary"
-              href="/path-to-your-resume.pdf" // Replace with the actual path to your resume
+              href="/adam-castro-web-developer.pdf" // Replace with the actual path to your resume
               target="_blank"
               rel="noopener noreferrer"
             >
