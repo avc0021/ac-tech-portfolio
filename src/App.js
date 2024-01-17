@@ -13,7 +13,7 @@ import {
   ListItemText,
   Button,
 } from "@mui/material";
-import { Rotate as Hamburger } from "hamburger-react";
+import { Squash as Hamburger  } from "hamburger-react";
 import ParticlesBackground from "./ParticlesBackground.js";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -79,7 +79,7 @@ function App() {
             <Button
               variant="contained"
               color="primary"
-              href="/adam-castro-web-developer-ns.pdf" // Replace with the actual path to your resume
+              href="/adam-castro-web-developer.pdf" // Replace with the actual path to your resume
               target="_blank"
               rel="noopener noreferrer"
             >
