@@ -49,7 +49,7 @@ function About() {
                 and a proud new father to a 4-month-old. Balancing my family
                 life with my professional endeavors has enriched my perspective,
                 enhancing my creativity and problem-solving skills. My tech
-                toolbox includes Javascript, FileZilla, Cascade CMS, React, XML,
+                toolbox includes Javascript, FileZilla, SiteImprove, Cascade CMS, React, XML,
                 JSON, Express, AWS Lambda, Git, Microsoft Azure, Algolia,
                 Ellucian Experience SDK, MaterialUI, Bootstrap, NodeJS, GraphQL,
                 Canva, Photoshop, and Insomnia. For me, it's not just about the
