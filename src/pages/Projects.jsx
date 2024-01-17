@@ -49,7 +49,7 @@ function Projects() {
               <CardMedia component="video" controls autoPlay loop muted>
                 <source src={HomeSearchVideo} type="video/mp4" />
               </CardMedia>
-              <Typography variant="body2" color="text.secondary" sx={{ marginTop: theme.spacing(2) }}>
+              <Typography variant="body2" color="text.secondary" sx={{ marginTop: theme.spacing(2) }} style={{ color: '#FFFFFF' }}>
                 In this pivotal project, which I spearheaded from development
                 through to production, we achieved a significant milestone by
                 integrating our Banner database with Algolia. This integration
@@ -84,7 +84,7 @@ function Projects() {
               <CardMedia component="video" controls autoPlay loop muted>
                 <source src={MicrosoftVideo} type="video/mp4" />
               </CardMedia>
-              <Typography variant="body2" color="text.secondary" sx={{ marginTop: theme.spacing(2) }}>
+              <Typography variant="body2" color="text.secondary" sx={{ marginTop: theme.spacing(2) }} style={{ color: '#FFFFFF' }}>
                 Discover the seamless integration of Microsoft Outlook and
                 OneDrive into your daily workflow with our innovative extension.
                 This cutting-edge tool, meticulously designed for the Ellucian
@@ -135,7 +135,7 @@ function Projects() {
               <CardMedia component="video" controls autoPlay loop muted>
                 <source src={CanvasVideo} type="video/mp4" />
               </CardMedia>
-              <Typography variant="body2" color="text.secondary" sx={{ marginTop: theme.spacing(2) }}>
+              <Typography variant="body2" color="text.secondary" sx={{ marginTop: theme.spacing(2) }} style={{ color: '#FFFFFF' }}>
                 This intuitive tool features two specialized cards: the 'Canvas
                 Card' and the 'To-Do Card'. The Canvas Card displays course
                 names and grades, complete with a convenient button at the

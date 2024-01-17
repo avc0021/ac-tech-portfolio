@@ -40,7 +40,7 @@ function About() {
         <div>
           <Card className="project-card">
             <CardContent>
-              <Typography variant="body2" color="text.other">
+              <Typography variant="body2" color="text.other" style={{ color: '#FFFFFF' }}>
                 Hello there! My name is Adam and I've found my calling in the
                 vibrant world of web and mobile technology at the University of
                 the Incarnate Word. Here, I'm not just coding or designing; I'm
