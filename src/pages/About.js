@@ -50,7 +50,7 @@ function About() {
                 life with my professional endeavors has enriched my perspective,
                 enhancing my creativity and problem-solving skills. My tech
                 toolbox includes Javascript, FileZilla, SiteImprove, Cascade CMS, React, XML,
-                JSON, Express, AWS Lambda, Git, Microsoft Azure, Algolia,
+                JSON, Express, AWS Lambda, Git, Microsoft Azure, Algolia, OpenAI, Bard,
                 Ellucian Experience SDK, MaterialUI, Bootstrap, NodeJS, GraphQL,
                 Canva, Photoshop, and Insomnia. For me, it's not just about the
                 tools. It's about creating user-friendly tech marvels. I believe
