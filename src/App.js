@@ -56,7 +56,7 @@ function App() {
           sx={{ width: drawerWidth }}
         >
           <Box
-            sx={{ width: 250 }}
+            sx={{ width: 150 }}
             role="presentation"
             onClick={toggleMenu}
             onKeyDown={toggleMenu}
@@ -68,8 +68,9 @@ function App() {
                   key={text}
                   component={Link}
                   to={`/${text.toLowerCase()}`}
+                  primaryTypographyProps={{ className: 'menuItemText' }}
                 >
-                  <ListItemText primary={text} />
+                  <ListItemText primary={text} primaryTypographyProps={{ className: 'menuItemText' }} />
                 </ListItem>
               ))}
             </List>
@@ -79,7 +80,7 @@ function App() {
             <Button
               variant="contained"
               color="primary"
-              href="/adam-castro-web-developer.pdf" // Replace with the actual path to your resume
+              href="/adam-castro-resume.pdf" // Replace with the actual path to your resume
               target="_blank"
               rel="noopener noreferrer"
             >

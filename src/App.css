@@ -94,6 +94,11 @@
   color: black;
 }
 
+.menuItemText {
+  font-size: 2rem;
+  font-family: 'circular';
+}
+
 .container {
   display: flex;
   justify-content: center;
